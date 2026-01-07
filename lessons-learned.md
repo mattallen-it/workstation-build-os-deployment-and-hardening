@@ -1,4 +1,3 @@
-
 # Lessons Learned
 
 This document outlines key lessons learned during the planning, assembly, configuration, and validation of a custom end-user workstation. These insights will be applied to improve efficiency, reliability, and documentation quality in future IT-focused projects.
@@ -68,4 +67,5 @@ This document outlines key lessons learned during the planning, assembly, config
 
 ## Summary
 
-This project pro
+This project provided hands-on experience across the full system lifecycle, including planning, assembly, firmware configuration, operating system deployment, troubleshooting, validation, and documentation. The lessons learned will directly inform future workstation deployments and support continued development of professional IT skills.
+
