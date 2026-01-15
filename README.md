@@ -90,3 +90,9 @@ Successfully delivered a stable and usable end-user workstation while producing 
 
 This project was intentionally documented with an IT-focused mindset rather than as a hobby build. All configuration changes, troubleshooting steps, and validation activities were recorded to improve repeatability, maintainability, and clarity.
 
+## Repository Naming Note
+
+This repository predates my current naming standard.  
+Future projects follow a consistent, standardized repository naming convention.
+
+
