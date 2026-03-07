@@ -29,7 +29,7 @@ Samsung 990 Pro installed in the primary M.2 slot.
 
 WD Black SN850X installed in the secondary M.2 slot.
 
-![NVMe drives installed](../images/nvme-installed.jpg)
+![NVMe drives installed](../images/nvme-installed.jpg.JPEG)
 
 ---
 
@@ -39,12 +39,9 @@ The BIOS successfully detected both NVMe drives.
 
 - M.2_1: Samsung 990 Pro 1TB
 - M.2_2: WD Black SN850X 2TB
+- Boot Device: Windows Boot Manager
 
-Boot device remained:
-
-Windows Boot Manager (Samsung 990 Pro)
-
-![BIOS NVMe Detection](../images/bios-nvme-detection.jpg)
+![BIOS detection](../images/bios-nvme-detection.jpg)
 
 ---
 
@@ -52,7 +49,7 @@ Windows Boot Manager (Samsung 990 Pro)
 
 The new NVMe drive was initialized using GPT partition style.
 
-![Disk Initialization](../images/windows-disk-init.jpg)
+![Disk initialization](../images/windows-disk-init.jpg)
 
 ---
 
@@ -60,7 +57,7 @@ The new NVMe drive was initialized using GPT partition style.
 
 The WD Black SN850X was formatted as an NTFS volume using Windows Disk Management.
 
-![Disk Management](../images/windows-disk-management.jpg)
+![Disk management](../images/windows-disk-management.jpg)
 
 ---
 
@@ -76,7 +73,7 @@ Virtual Machines
 Security Tools  
 Lab Environments
 
-![Final Drives](../images/windows-final-drives.jpg)
+![Final drives](../images/windows-final-drives.jpg)
 
 ---
 
