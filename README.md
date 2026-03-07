@@ -95,4 +95,8 @@ This project was intentionally documented with an IT-focused mindset rather than
 This repository predates my current naming standard.  
 Future projects follow a consistent, standardized repository naming convention.
 
+## Workstation Build Labs
+
+- [NVMe Storage Expansion and Boot Drive Migration](build/nvme-storage-expansion.md)
+
 
