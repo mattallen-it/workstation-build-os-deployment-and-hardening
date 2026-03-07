@@ -38,6 +38,7 @@ This document lists the hardware components used in the workstation build.
 - The WD Black SN850X is installed in the **secondary chipset-connected M.2 slot**.
 - Storage separation allows lab workloads and virtual machines to run independently of the operating system.
 
+
 ## Component Selection & Rationale
 
 ### CPU: AMD Ryzen 5 7600X3D
