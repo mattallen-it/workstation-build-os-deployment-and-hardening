@@ -19,7 +19,7 @@ Operating System: Windows 11
 
 Primary M.2 slot identified before installing the NVMe drives.
 
-![Empty M.2 slot](../images/nvme-before-install.jpg)
+![Empty M.2 slot](../images/nvme-before-removal.jpg)
 
 ---
 
@@ -29,7 +29,7 @@ Samsung 990 Pro installed in the primary M.2 slot.
 
 WD Black SN850X installed in the secondary M.2 slot.
 
-![NVMe drives installed](../images/nvme-installed.jpg)
+![NVMe drives installed](../images/nvme-installed.jpg.JPEG)
 
 ---
 
