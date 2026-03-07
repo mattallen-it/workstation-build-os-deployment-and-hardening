@@ -1,61 +1,89 @@
-# NVMe Boot Drive Migration and Storage Expansion
+# NVMe Storage Expansion and Boot Drive Migration
 
 ## Objective
-Upgrade workstation storage and move the primary OS NVMe drive to the CPU-connected M.2 slot for better performance and cleaner lab separation.
 
-## Environment
-- Motherboard: ASUS TUF Gaming motherboard
-- Primary Drive: Samsung 990 Pro with Heatsink 1TB
-- Secondary Drive: WD Black SN850X 2TB
-- OS: Windows 11
+Upgrade the workstation storage configuration by moving the primary NVMe drive to the CPU-connected M.2 slot and installing a secondary NVMe drive dedicated to lab workloads.
 
-## Reason for Change
-The original OS drive was not installed in the primary M.2 slot. The goal was to:
-- Move the boot drive to M.2_1
-- Install a second NVMe SSD for lab storage
-- Keep the OS drive separated from lab workloads
+---
 
-## Procedure
-1. Powered down the workstation and unplugged the system.
-2. Opened the case and identified both M.2 slots.
-3. Removed the Samsung 990 Pro from the lower M.2 slot.
-4. Installed the Samsung 990 Pro into M.2_1 (top slot / CPU-connected lane).
-5. Installed the WD Black SN850X 2TB into M.2_2.
-6. Booted into BIOS and verified both NVMe drives were detected.
-7. Confirmed Windows Boot Manager was still pointed to the Samsung 990 Pro.
-8. Booted into Windows successfully.
-9. Opened Disk Management.
-10. Initialized the new SSD using GPT.
-11. Created a new NTFS volume.
-12. Renamed the new drive to LABS (D:).
+## Hardware
 
-## Validation
-### BIOS Detection
-- M.2_1: Samsung SSD 990 PRO with Heatsink 1TB
+Motherboard: ASUS TUF Gaming  
+Primary NVMe: Samsung 990 Pro 1TB (with heatsink)  
+Secondary NVMe: WD Black SN850X 2TB  
+
+Operating System: Windows 11
+
+---
+
+## Initial Hardware State
+
+Primary M.2 slot identified before installing the NVMe drives.
+
+![Empty M.2 slot](../images/nvme-before-install.jpg)
+
+---
+
+## NVMe Installation
+
+Samsung 990 Pro installed in the primary M.2 slot.
+
+WD Black SN850X installed in the secondary M.2 slot.
+
+![NVMe drives installed](../images/nvme-drives-installed.jpg)
+
+---
+
+## BIOS Verification
+
+The BIOS successfully detected both NVMe drives.
+
+- M.2_1: Samsung 990 Pro 1TB
 - M.2_2: WD Black SN850X 2TB
-- Boot device: Windows Boot Manager on Samsung 990 Pro
 
-### Windows Disk Management
-- Disk 0: Samsung 990 Pro 1TB
-- Disk 1: WD Black SN850X 2TB
-- Partition style: GPT
-- File system: NTFS
+Boot device remained:
 
-### Final Result
-- C: Samsung 990 Pro 1TB for OS and applications
-- D: LABS 2TB for labs, tools, VMs, and datasets
+Windows Boot Manager (Samsung 990 Pro)
+
+![BIOS detection](../images/bios-nvme-detection.jpg)
+
+---
+
+## Disk Initialization
+
+The new NVMe drive was initialized using GPT partition style.
+
+![Disk initialization](../images/windows-disk-init.jpg)
+
+---
+
+## Disk Configuration
+
+The WD Black SN850X was formatted as an NTFS volume using Windows Disk Management.
+
+![Disk management](../images/windows-disk-management.jpg)
+
+---
+
+## Final Storage Layout
+
+Final workstation storage configuration:
+
+C: Samsung 990 Pro 1TB  
+Operating System and Applications
+
+D: LABS (WD Black SN850X 2TB)  
+Virtual Machines  
+Security Tools  
+Lab Environments
+
+![Final drives](../images/windows-final-drives.jpg)
+
+---
 
 ## Lessons Learned
-- The primary NVMe slot should be used for the OS drive when possible.
-- GPT is the correct partition style for modern UEFI Windows systems.
-- Separating the OS drive from lab storage improves organization and scalability.
-- BIOS verification and Windows disk provisioning should always be documented after hardware changes.
 
-## Screenshots
-Add the following screenshots to the images folder and link them here:
-- Motherboard before SSD migration
-- Motherboard after SSD migration
-- BIOS showing both NVMe drives
-- Disk initialization in Windows
-- Final Disk Management layout
-- Final File Explorer view showing C: and LABS (D:)
+- Primary NVMe slots connected directly to the CPU should be used for the OS drive.
+- GPT partitioning is required for modern UEFI systems.
+- Separating operating system and lab storage improves performance and organization.
+- Hardware upgrades should be validated at the BIOS and OS level.
