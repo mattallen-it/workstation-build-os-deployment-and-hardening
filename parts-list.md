@@ -2,21 +2,41 @@
 
 This document outlines the components selected for the system build and the rationale behind each decision, with an emphasis on performance, reliability, cost efficiency, and future upgrade potential.
 
+# Workstation Parts List
+
+This document lists the hardware components used in the workstation build.
+
 ---
 
 ## System Components Summary
 
 | Component | Model |
-|--------|------|
+|-----------|------|
 | CPU | AMD Ryzen 5 7600X3D |
 | CPU Cooler | Thermalright Peerless Assassin 120 SE ARGB |
 | Motherboard | ASUS TUF Gaming B850-PLUS WiFi (AM5) |
 | Memory | Kingston Fury Beast 32GB (2x16GB) DDR5 6000 MT/s CL36 |
 | Storage | Samsung 990 Pro 1TB NVMe PCIe 4.0 (Heatsink) |
-| Power Supply | Corsair RMe Series 1000W 80+ Gold (Fully Modular) |
+| Storage | WD Black SN850X 2TB NVMe PCIe 4.0 |
+| Power Supply | Corsair RM Series 1000W 80+ Gold (Fully Modular) |
 | Case | NZXT H6 Flow RGB |
 
 ---
+
+## Storage Configuration
+
+| Drive | Model | Purpose |
+|------|------|------|
+| NVMe 1 | Samsung 990 Pro 1TB | Operating System / Applications |
+| NVMe 2 | WD Black SN850X 2TB | Lab environments / Virtual Machines |
+
+---
+
+## Notes
+
+- The Samsung 990 Pro is installed in the **primary CPU-connected M.2 slot**.
+- The WD Black SN850X is installed in the **secondary chipset-connected M.2 slot**.
+- Storage separation allows lab workloads and virtual machines to run independently of the operating system.
 
 ## Component Selection & Rationale
 
