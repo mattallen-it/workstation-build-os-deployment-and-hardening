@@ -10,12 +10,13 @@ This document lists the hardware components used in the workstation build.
 
 ## System Components Summary
 
-| Component | Model |
-|-----------|------|
+|| Component | Model |
+|----------|------|
 | CPU | AMD Ryzen 5 7600X3D |
 | CPU Cooler | Thermalright Peerless Assassin 120 SE ARGB |
-| Motherboard | ASUS TUF Gaming B850-PLUS WiFi (AM5) |
+| Motherboard | ASUS TUF Gaming B650-PLUS WIFI (AM5) |
 | Memory | Kingston Fury Beast 32GB (2x16GB) DDR5 6000 MT/s CL36 |
+| GPU | MSI RTX 5060 Ti Gaming OC |
 | Storage | Samsung 990 Pro 1TB NVMe PCIe 4.0 (Heatsink) |
 | Storage | WD Black SN850X 2TB NVMe PCIe 4.0 |
 | Power Supply | Corsair RM Series 1000W 80+ Gold (Fully Modular) |
