@@ -112,4 +112,3 @@ Future projects follow a consistent, standardized repository naming convention.
 
 - [NVMe Storage Expansion and Boot Drive Migration](workstation-build-os-deployment-and-hardening/build/nvme-storage-expansion.md)
 - [Discrete GPU Installation and Verification](workstation-build-os-deployment-and-hardening/build/discrete-gpu-installation-and-verification.md)
-
