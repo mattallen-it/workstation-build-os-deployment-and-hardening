@@ -74,6 +74,22 @@ Selected for optimal compatibility with the AM5 platform and Ryzen memory perfor
 
 RGB memory was considered but ultimately unnecessary due to cooler clearance and lack of functional benefit. The non-RGB kit provided significant cost savings while maintaining performance.
 
+--
+
+### GPU: MSI RTX 5060 Ti Gaming OC
+
+A discrete GPU was installed to provide reliable display performance and improve overall system responsiveness when managing multiple virtual machines.
+
+While the IAM lab environment itself does not rely on GPU acceleration, a dedicated GPU ensures stable video output and prevents the CPU from handling graphical workloads while running virtualization tasks.
+
+Key considerations included:
+
+• Reliable display output during virtualization workloads  
+• Reduced graphical load on the CPU while managing multiple VMs  
+• Potential future support for GPU-accelerated development workloads
+
+The GPU does not directly impact the identity infrastructure but improves the overall usability and stability of the workstation hosting the lab environment.
+
 ---
 
 ### Storage: Samsung 990 Pro 1TB NVMe PCIe 4.0
