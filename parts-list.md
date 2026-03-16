@@ -10,7 +10,7 @@ This document lists the hardware components used in the workstation build.
 
 ## System Components Summary
 
-|| Component | Model |
+| Component | Model |
 |----------|------|
 | CPU | AMD Ryzen 5 7600X3D |
 | CPU Cooler | Thermalright Peerless Assassin 120 SE ARGB |
