@@ -55,12 +55,13 @@ The GPU requires supplemental power from the power supply.
 After installing the card, the PCIe power cable was connected.
 
 <p align="center">
-<img src="../images/GPU_PCIe.png" width="650" style="transform: 
+  <img src="../images/GPU_PCIE.png" width="650">
 </p>
 
 <p align="center">
-PCIe power cable connected to the RTX 5060 Ti.
+  PCIe power cable connected to the RTX 5060 Ti.
 </p>
+
 ---
 
 ## Verification
